@@ -247,20 +247,16 @@ LOG ON
 
 4.2 Instalación de Hyper-V VSS de Avamar en los Nodos
 
- 
- 
+![alt text](imagenes/Programas.png "Programa instalado")
+![alt text](imagenes/EMC.png "EMC")
 4.3 Creación de rol en el cluster de hyper-v para manejo de todas las VM en el cliente de avamar:
- 
+![alt text](imagenes/ROL.png "Instalación de Lex")
 
 4.4 Optimización de Almacenamiento SAN
 4.4.1 Almacenamiento primario de la SAN
 Documentación de los espacios de almacenamiento para liberar espacio de la SAN.
 
-
-
-
-
-
+![alt text](imagenes/SAN.png "SAN")
  
 LUN
 ITEM	NAME LUN	FREE SPACE	TOTAL DISK	Disk	Volume	% FREE
@@ -285,9 +281,7 @@ ITEM	NAME LUN	FREE SPACE	TOTAL DISK	Disk	Volume	% FREE
 
 4.4.2 Almacenamiento final de la SAN
 
-
-
-
+![alt text](imagenes/SAN2.png "Instalación de Lex")
 
 LUN		
 ITEM	NAME LUN	FREE SPACE	TOTAL DISK	Disk	Volume	% FREE
@@ -513,5 +507,3 @@ https://www.delltechnologies.com/asset/en-us/products/data-protection/technical-
 https://learn.microsoft.com/en-us/system-center/dpm/back-up-hyper-v-virtual-machines?view=sc-dpm-2025
 El respaldo de Hyper-V de la VM indica el mensaje de error "Virtual machine does not have valid vhd chains and will not be backed up with image level backup" | Dell Perú
 https://www.dell.com/support/manuals/en-us/avamar-server/avamar_administration_guide_19.10/?guid=guid-d9b4d125-2026-4860-b6e2-44ea3b537582&lang=en-us
-
-

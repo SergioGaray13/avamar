@@ -1,6 +1,9 @@
 Informe de Mantenimiento de Infraestructura Hyper-V y Dell Avamar
+
 Fecha de realización del mes de octubre del 2024 al mes de enero 2025
+
 Infraestructura: Hyper-V con Avamar Dell Backup
+
 Infraestructura: VMWare con Avamar Dell Backup
 
 Introducción

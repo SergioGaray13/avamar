@@ -7,19 +7,23 @@ Infraestructura: Hyper-V con Avamar Dell Backup
 Infraestructura: VMWare con Avamar Dell Backup
 
 Introducción
+
 En el contexto actual de la transformación digital y la creciente dependencia de infraestructuras virtualizadas, el mantenimiento preventivo y correctivo de los entornos Hyper-V se ha convertido en un aspecto crítico para garantizar la continuidad operativa de las organizaciones. El presente informe documenta las actividades de mantenimiento realizadas en una infraestructura Hyper-V que gestiona 74 máquinas virtuales (VMs) respaldadas por el sistema Avamar Dell, enfocándose en los procesos de consolidación y reconstrucción de máquinas virtuales para optimizar el rendimiento y garantizar la integridad de los datos, así como un upgrade de versión de máquina de virtual de 5.0, 8.0 a la última versión de Hyper-V que es la 9.0 y además de la depuración de LUNS para espacio disponible para nuevas Maquinas virtuales. 
 
 Se realizo la actualización del cliente de Avamar de versión de 19.7 a 19.10 del agente y así poder llegar a los requerimientos mínimos de parte del proveedor. Se actualizo cada nodo de la infraestructura y se instaló sus plugins correspondientes, así como el usuario específico de active directory para el logeo de servicios.
 
 Objetivo General
+
 Ejecutar un proceso integral de mantenimiento en la infraestructura Hyper-V para optimizar el rendimiento del sistema, garantizar la integridad de los respaldos y mejorar la eficiencia operativa de las 74 máquinas virtuales gestionadas y depuración de LUNS.
 
 Objetivos Específicos
+
 1. Realizar la consolidación (merge) de snapshots en las máquinas virtuales para optimizar el espacio de almacenamiento y mejorar el rendimiento del sistema, estableciendo una línea base actualizada para cada VM.
 
 2. Implementar procesos de reconstrucción selectiva en las VMs que presenten fragmentación o inconsistencias, asegurando su correcta operatividad y la integridad de los respaldos en Avamar Dell.
 
-1. Resumen 
+1. Resumen
+   
 1.1 Respaldo con Avamar en Hyper-V y VMware:
 Se implementó la solución de respaldo Avamar para entornos Hyper-V y VMware, con el objetivo de garantizar la protección de las máquinas virtuales (VMs). Para ambos entornos, se realizaron los siguientes pasos:
 •	Para Hyper-V: Se configuró Avamar para realizar respaldos de las máquinas virtuales sin interrumpir su funcionamiento, utilizando la integración con VSS (Volume Shadow Copy Service). Este proceso permite obtener instantáneas consistentes de las VMs en funcionamiento, realizando respaldos completos e incrementales de las máquinas virtuales, lo que optimiza el tiempo y espacio de almacenamiento.
@@ -39,7 +43,7 @@ En la infraestructura de almacenamiento de área de red (SAN), se llevó a cabo 
 •	Optimización de la distribución de las LUNs en los discos físicos para mejorar el rendimiento y la eficiencia en la gestión del almacenamiento.
 •	Revisión de las configuraciones de acceso a LUNs y ajustes para garantizar que el almacenamiento estuviera correctamente asignado y optimizado.
 
-2. Marco Teórico: Actualización del Cliente Avamar
+3. Marco Teórico: Actualización del Cliente Avamar
 2.1 Fundamentos de la Actualización del Cliente Avamar
 La actualización del cliente Avamar constituye un componente crítico dentro del ciclo de vida de la gestión de respaldos en entornos virtualizados. El cliente Avamar, también conocido como Avamar Agent, es el software responsable de la comunicación entre las máquinas virtuales y el servidor Avamar central, facilitando la identificación, transferencia y deduplicación de datos a nivel de cliente.
 
